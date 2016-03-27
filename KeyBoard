@@ -1,1 +1,25 @@
 
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
+import Game;
+
+public class Keyboard implements KeyListener{
+	private Game game;
+	
+	public Keyboard(Game game){
+		this.game = game;
+	}
+public void keyPressed(KeyEvent event) {
+		int key = event.getKeyCode();
+	  if (key == KeyEvent.VK_RIGHT || key == KeyEvent.VK_D ) { game.movePlayerRight(); }
+	  if (key == KeyEvent.VK_LEFT || key == KeyEvent.VK_Q ) { game.movePlayerLeft(); }
+	  if (key == KeyEvent.VK_DOWN || key == KeyEvent.VK_S ) { game.movePlayerDown(); }
+	  if (key == KeyEvent.VK_UP || key == KeyEvent.VK_Z ) { game.movePlayerUp(); }
+	  }
+public void keyTyped(KeyEvent e) {
+	}
+
+public void keyReleased(KeyEvent e) {
+	}
+	    
