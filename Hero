@@ -1,1 +1,7 @@
 
+public abstract class Hero extends Actor {
+  private int adrenalin;
+  
+  public int getHeroAdrenalin() {
+    return adrenalin;
+    }
