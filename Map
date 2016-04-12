@@ -1,16 +1,24 @@
 package Model;
 
 public class Map {
-  private int size = 50;
-  
+  private int size;
+  private int[][] map;
+ 
+  public Map (int size) {
+    this.size = size;
+    this.map = new int[size][size];
+    }
+    
   public int getSize() {
     return this.size;
     }
-  public void setSize(int size) {
-    this.size = size;
-    }
   
   public int[][] getMap() {
+    Map m = new Map(50);
+    for (int i = 0; i<50;i++) {
+      for(int j = 0; i<50;j++) {
+        m[i][j] = 0;
+    }
     
   
   
