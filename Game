@@ -6,4 +6,5 @@ private ArrayList<Zombi> zombies = new ArrayList<Zombi>();
 private ArrayList<Hero> heroes = new ArrayList<Hero>();
 
 public void moveHeroUp() {
+
   
