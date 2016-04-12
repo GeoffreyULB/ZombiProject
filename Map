@@ -3,5 +3,14 @@ package Model;
 public class Map {
   private int size = 50;
   
+  public int getSize() {
+    return this.size;
+    }
+  public void setSize(int size) {
+    this.size = size;
+    }
+  
+  public int[][] getMap() {
+    
   
   
