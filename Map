@@ -1,0 +1,40 @@
+package Model;
+
+public class Map {
+  private int size;
+  private int[][] map;
+ 
+  public Map (int size) {
+    this.size = size;
+    this.map = new int[size][size];
+  }
+    
+  public int getSize() {
+    return this.size;
+  }
+  
+  public int[][] getMap() {
+    Map m = new Map(50);
+    for (int i = 0; i<50;i++) {
+      for(int j = 0; i<50;j++) {
+        m[i][j] = 0;
+    }
+    for (Monster monster : monsters){
+      int x = getPosX().monster;
+      int y = getPosY().monster;
+      m[x][y] = 3;
+      }
+    for (Hero hero : heroes){
+      int x = getPosX().hero;
+      int y = getPosY().hero;
+      m[x][y] = 2;
+      }
+    for (Wall wall : walls){
+      int x = getPosX().hero;
+      int y = getPosY().hero;
+      m[x][y] = 1;
+    return m;
+  }
+    
+  
+  

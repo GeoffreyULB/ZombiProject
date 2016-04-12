@@ -11,13 +11,10 @@ public class Actor {
   public int getPosY() {
     return posY;
     }
-  
-  public void setPosX(int posX) {
-    this.posX = posX;
-    }
     
-  public void setPosY(int posY) {
-    this.posY = posY,
+  public void move(int X, int Y) {
+    this.posX = this.posX + X;
+    this.posY = this.posY + Y;
     }
     
   public int getHealth() {

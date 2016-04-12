@@ -1,0 +1,9 @@
+package Controller
+
+java.lang.Object
+java.awt.event.MouseAdapter
+javax.swing.event.MouseInputAdapter 
+
+import Model.Game
+
+public abstract class MouseInputAdapter extends MouseAdapter implements MouseInputListener
